@@ -1,0 +1,121 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./happyday2.css"> 
+    <title> Happy Birthday Bruno</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            margin-bottom: 100px
+        }
+
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            color: #333;
+            margin-top: 50px;
+            font-size: 60px;
+        }
+
+        h2 {
+            font-family: 'Brush Script MT', cursive;
+            color: #333;
+            margin-top: 20px;
+            font-size: 30px; 
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .sun {
+            font-size: 64px;
+            color: #ffc107;
+            margin-top: 20px;
+        }
+
+        .heart {
+            font-size: 64px;
+            color: #9c0c0c;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .btn {
+            background-color: #FFB6C1;
+            color: white;
+            padding:10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Bruno!</h1>
+
+    <div class = "gif_container">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ozb2d1NnA2eWZsNzUzbjhhZm1wNmxvbXJ4N2E3bDY1ZjJtdHk1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/85NgDQW1dszTIzxmXu/giphy.gif" alt="Happy Birthday" width = "400" height = "400">
+    </div>
+
+    <p>
+        Today is a special day and I'm here to celebrate it.<br>
+        You've come a long way through these 26 years of your life and I'm glad I became part of your journey.<br>
+        You are 26, practically an old fart.<br>
+        With every passing year, you've become the smartest, wises, stunning and accomplished person that I've ever known.<br>
+        You are definitely someone I've learned to admire both professionally and personally. <br>
+        I'm in gratitude of the time I've spent with you.<br>
+        You've surely left an impeccable mark in my life.<br>
+        This is just to celebrate the day of your birthday but you are celebrated everyday for who you are. <br>
+        As much as I am thankful to have you in my life, whoever crosses your path is mutually pleased. <br>
+        You are a vibrant and illuminating, you are my sunrise of every morning and my sunset of every evening.<br>
+        I love you.
+    </p>
+
+    <div class="sun">&#9728;</div>
+    <div class="heart">&#9829;</div>
+    
+    <h2> Are you excited to celebrate your day? </h2>
+
+    <div class = "buttons">
+        <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        <button class="btn" id = "backButton" onclick="previousPage()">Back</button>
+
+        <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function previousPage() {
+                    window.location.href = "welcome.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+        </script> 
+    </div>
+
+
+</body>
+</html>

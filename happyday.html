@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./styles.css"> 
+    <link rel="stylesheet" href="./happyday.css"> 
 <title>Happy Birthday Bruno</title>
     <div class="container">
         <div>
             <h1 class = "h1"> Happy Birthday Bruno!</h1>
         </div>
         <div class = "gif_container">
-            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3Zhcnh6bmRtc3Jkempyd3YzOWFqNDdkajFmMjViaGxqcTlpdHhsZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mcJohbfGPATW8/giphy.gif" alt="Happy Birthday">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ozb2d1NnA2eWZsNzUzbjhhZm1wNmxvbXJ4N2E3bDY1ZjJtdHk1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/85NgDQW1dszTIzxmXu/giphy.gif" alt="Happy Birthday" width = "400" height = "400">
         </div>
+<br>
+        <div>
+            <p1 class = "p1"> Today is a special day and I'm here to celebrate it. You've come a long way through these 26 years of your life and I'm glad I became part of your journey. </p1>
+            </div>
+<br>
+            <div>
+            <p1 class = "p1"> You are 26, practically an old fart. Life has it's ups and downs but every moment counts. With every passing year, you've become the smartes, wises, stunning and accomplished person that I've ever known.</p1>
+            </div>
+<br>
+            <div>
+            <p1 class = "p1"> You are definitely someone I've learned to admire whether it is professionally or personally. I would like to give you thanks for being in my life as well. You've surely left an impeccable mark in my life.</p1>
+            </div>
+            
+        <div>
+            <h2 class = "h2"> Are you excited? </h2>
+        </div>
+        
         <div class = "buttons">
-            <h1 class = "h2"> Are you excited?</h1>
             <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
             <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <button class="btn" id = "backButton" onclick="previousPage()">Back</button>
             <script>
                 function nextPage() {
                     window.location.href = "yes.html";
+                }
+
+                function previousPage() {
+                    window.location.href = "welcome.html";
                 }
                 
                 function moveButton() {
