@@ -2,17 +2,29 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./yes.css">
-        <title> Sushi Time!</title>
+        
     </head> 
     <body>
         <div class="container">
             <div >
-                <h1 class = "header_text">Yeeeyyyy!!</h1>
+                <h1 class = "header_text">Let's Celebrate with Ramen!</h1>
+
             </div>
+
+            <div class = "button">
+                <button class="btn" id = "backButton" onclick="previousPage()">Menu</button>
+            </div>
+    
+            <script>
+                function previousPage() {
+                    window.location.href = "https://deigo.mx/menu/";
+                }
+            </script>  
+            
             <div class="gif_container">
                 <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
             </div>
-        </div>
+        </div> 
        
     </body> 
 </html>

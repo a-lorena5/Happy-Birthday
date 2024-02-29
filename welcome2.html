@@ -1,0 +1,87 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./happyday2.css"> 
+    <title> Happy Birthday Bruno</title>
+    <style>
+        body {
+            background-color: #8ab0d3;
+            text-align: center;
+            height: 90vh;
+            margin-bottom: 100px
+        }
+
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 60px;
+            font-weight: normal;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .btn {
+            background-color: #FFB6C1;
+            color: white;
+            padding:10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gif_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class = "gif_container">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDYzbmxpY2E5cGZlbmhpa2JoZngyODQ0ZXZva3kzOWN4eXRyMzFoYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jptSqy6yYse5AaDRn0/giphy.gif" alt="Hello" width = "400" height = "400">
+    </div>
+
+    <h1>Welcome to your Virtual Celebration!</h1>
+
+    <p>
+        This was made for someone special, someone who deserves everything and more.<br>
+        Are you ready to see more?
+    </p>
+
+    <div class = "button">
+        <button class="btn" id = "cont.button" onclick="nextPage()">Continue</button>
+    </div>
+
+        <script>
+                function nextPage() {
+                    window.location.href = "happyday2.html";
+                }
+        </script> 
+    </div>
+
+
+</body>
+</html>
