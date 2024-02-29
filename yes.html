@@ -8,16 +8,27 @@
         <div class="container">
             <div >
                 <h1 class = "header_text">Let's Celebrate with Ramen!</h1>
-
+                <p class = "p1"> Please choose between viewing the menu for your birthday lunch <br>
+                    Or <br>
+                    To playing a Sushi Game.
+                </p>
             </div>
 
             <div class = "button">
                 <button class="btn" id = "backButton" onclick="previousPage()">Menu</button>
+                <button class="btn" id = "Sushi Slicer" onclick="sushiPage()">Sushi</button>
+                <button class="btn" id = "backButton" onclick="previousPage()">Back</button>
             </div>
     
             <script>
-                function previousPage() {
+                function menuPage() {
                     window.location.href = "https://deigo.mx/menu/";
+                }
+                function sushiPage() {
+                    window.location.href = "https://infinite-sushi-slicer.vercel.app/";
+                }
+                function previousPage() {
+                    window.location.href = "happyday2.html";
                 }
             </script>  
             
